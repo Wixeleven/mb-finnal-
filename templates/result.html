@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popular Tracks</title>
+</head>
+<body>
+    <h1>Popular Tracks</h1>
+    <p>Top 10 tracks for {{ year }}:</p>
+    <ul>
+        {% for track in tracks %}
+            <li>{{ track[0] }} (Popularity Score: {{ track[1] }})</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/">Search again</a>
+</body>
+</html>
